@@ -4,6 +4,7 @@
 		<title>passwdgen </title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 	<body>
 
@@ -13,16 +14,16 @@
 
 			<form>
 
-				<p>length: <input type="text" name="character_lengt" placeholder="suggested 12+"></p>
+				<p>length: <input type="text" name="character_length" placeholder="suggested 12+" value="10"></p>
 					
-				<p><input type="checkbox" name="numberical_characters" checked> numbers</p>
-				<p><input type="checkbox" name="special_characters" checked> special characters</p>
-				<p><input type="checkbox" name="uppercase_characters" checked> uppercase characters</p>
-				<p><input type="checkbox" name="lowercase_characters" checked> lowercase characters</p>
-				<p>exclude characters: <input type="text" name="exclude_characters" placeholder="[]{}()\|/<>,.:;`~!@#$%^&*-_=+"></p>
+				<p><input type="checkbox" id="numerical_characters" checked> numbers</p>
+				<p><input type="checkbox" id="special_characters" checked> special characters</p>
+				<p><input type="checkbox" id="uppercase_characters" checked> uppercase characters</p>
+				<p><input type="checkbox" id="lowercase_characters" checked> lowercase characters</p>
+				<p>exclude characters: <input type="text" id="exclude_characters" placeholder="[]{}()\|/<>,.:;`~!@#$%^&*-_=+"></p>
 
-				<button>generate</button>
-				<input type="text" name="password">
+				<button type="button" onclick="generatePassword()">generate</button>
+				<input type="text" id="password">
 			</form>
 
 		</div>

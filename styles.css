@@ -3,5 +3,7 @@
 .main { width: 60%; padding: 10%; }
 .main h2 { font-family: 'Share Tech Mono', monospace; color: white; f}
 
+#password { width: 25%; }
+
 body{ background-image: url("https://wallpaperaccess.com/full/1101225.jpg"); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; }
 p { font-family: 'Share Tech Mono', monospace; color: white; }
